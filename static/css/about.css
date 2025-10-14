@@ -1,0 +1,68 @@
+@import "./layout.css";
+
+/* Contact Card */
+.contact-card {
+  background-color: var(--grey);
+  border-radius: 1rem;
+  width: 75vw;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  overflow: hidden; 
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.contact-card:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0.25rem 0.25rem 0.25rem var(--dark-purple);
+}
+.contact-card img {
+  float: left;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 1rem;
+  margin: 0 1.5rem 1rem 0;
+  object-fit: cover;
+  object-fit: cover;
+}
+
+.contact-card-right {
+  overflow: hidden;
+  text-align: left;
+}
+
+.contact-card h1 {
+  margin: 0;
+  font-size: 1.6rem;
+
+}
+
+.contact-card h2 {
+  margin: 0.3rem 0 1rem;
+  font-size: 1.2rem;
+  color: var(--purple);
+}
+
+.contact-card p {
+  font-size: 1rem;
+  height: 100%;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.contact-email,
+.contact-link {
+  margin-right: 1.2rem;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+  padding: 1rem;
+  color:var(--white);
+    background-color: var(--dark-purple);
+}
+
+.contact-email:hover,
+.contact-link:hover {
+    color:var(--dark-purple);
+    background-color: var(--white);
+}

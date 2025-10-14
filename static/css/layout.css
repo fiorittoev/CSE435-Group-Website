@@ -1,0 +1,72 @@
+:root
+{
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #efe9e7;
+    --blue: #dae0f2;
+    --pink: #f9cff2;
+    --purple: #52154e;
+    --dark-purple: #1F0322;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    height:auto;
+    width:100%;
+    background-color: var(--white);
+    color: var(--dark-purple);
+    border-bottom: var(--dark-purple);
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+nav
+{ 
+    text-align: right;
+    color: var(--dark-purple);
+    padding:1rem;
+}
+nav a
+{
+    text-decoration: none;
+    border-radius: 1rem;
+    padding:1rem;
+    transition: 0.2s ease-in-out;
+}
+nav a:hover
+{
+    color: var(--white);
+    background-color: var(--dark-purple);
+    transition: 0.2s ease-in-out;
+}
+main 
+{ 
+    flex: 1;
+    margin: 5vw 5vw 10vw 10vw;
+}
+footer 
+{ 
+    color: var(--white);
+    padding: 0.5rem;
+    background-color: var(--dark-purple);
+    width: 100vw;
+    bottom: 0;
+    height:auto;
+    margin-top: auto;
+}

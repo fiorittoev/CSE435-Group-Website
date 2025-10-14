@@ -1,0 +1,50 @@
+@import "./layout.css";
+h1
+{
+    color:var(--dark-purple);
+}
+.information-card
+{
+    background-color: var(--grey);
+    width:75vw;
+    height: auto;
+    text-align: left;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    padding:2rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.information-card:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0.25rem 0.25rem 0.25rem var(--dark-purple);
+}
+.information-card h2
+{
+    color:var(--purple);
+}
+.information-card h3
+{
+    color:var(--purple)
+}
+.information-card p
+{
+    height: 20vw;
+    color:black;
+}
+
+.information-card a{
+  margin-right: 1.2rem;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+  padding: 1rem;
+  color:var(--white);
+    background-color: var(--dark-purple);
+}
+
+.information-card a:hover{
+    color:var(--dark-purple);
+    background-color: var(--white);
+}

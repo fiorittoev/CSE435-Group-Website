@@ -1,0 +1,36 @@
+@import "./layout.css";
+h1
+{
+    color:var(--dark-purple);
+}
+.home-card
+{
+    background-color: var(--grey);
+    width:75vw;
+    height: auto;
+    text-align: left;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding:1rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.home-card:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0.25rem 0.25rem 0.25rem var(--dark-purple);
+}
+.home-card h2
+{
+    color:var(--dark-purple);
+}
+.home-card h3
+{
+    color:var(--purple)
+
+}
+.home-card p
+{
+    height: 20vw;
+    overflow-y: scroll;
+    color:black;
+}
