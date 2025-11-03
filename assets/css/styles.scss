@@ -1,7 +1,10 @@
 ---
 ---
-@use "layout";
-@use "home";
-@use "project";
-@use "team";
-@use "course";
+
+// Import variables first
+@import "layout";
+@import "home";
+@import "project";
+@import "team";
+@import "course";
+@import "style";

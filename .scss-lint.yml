@@ -1,0 +1,9 @@
+linters:
+  ImportantRule:
+    enabled: false
+  PropertySortOrder:
+    enabled: false
+  SelectorFormat:
+    enabled: false
+  QualifyingElement:
+    enabled: false
