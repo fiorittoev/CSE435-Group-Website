@@ -1,0 +1,37 @@
+h1
+{
+    color:var(--dark-purple);
+}
+.project-card
+{
+    background-color: var(--grey);
+    height: auto;
+    text-align: left;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    padding:2rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.agenda-item {
+    background-color: var(--white);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid var(--blue);
+}
+
+.download-link {
+    display: inline-block;
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.download-link:hover {
+    background-color: var(--dark-purple);
+}

@@ -1,0 +1,25 @@
+title: Team TJA2
+description: Traffic Jam Assist Project Website
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  team_members:
+    output: true
+  meeting_agendas:
+    output: true
+
+# Exclude from processing
+exclude:
+  - app.py
+  - Dockerfile
+  - docker-compose.yml
+  - requirements.txt
+  - __pycache__

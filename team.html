@@ -1,0 +1,24 @@
+---
+layout: default
+title: Team
+---
+<h1>About The Team</h1>
+
+{% for member in site.team_members %}
+<div class="contact-card">
+  <img src="{{ member.image | relative_url }}">
+  <div class="contact-card-right">
+    <h1>{{ member.name }}</h1>
+    <h2>{{ member.role }}</h2>
+    <p></p>
+    <a class="contact-email" href="mailto:{{ member.email }}">
+      {{ member.email }}
+    </a>
+    {% if member.website %}
+    <a class="contact-link" href="{{ member.website }}">
+      Website
+    </a>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}

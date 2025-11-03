@@ -1,0 +1,15 @@
+---
+layout: default
+title: Project
+---
+<h1>Project Information</h1>
+<div class="project-card">
+  <h2>Meeting Agenda Archive</h2>
+  <p>Below is the archive of meeting agendas.</p>
+  {% for agenda in site.meeting_agendas %}
+    <div class="agenda-item">
+      <p>Meeting Date: {{ agenda.date }}</p>
+      <a href="{{ agenda.file-path | relative_url }}" class="download-link">Download</a>
+    </div>
+  {% endfor %}
+</div>
