@@ -1,7 +1,9 @@
 title: Team TJA2
 description: Traffic Jam Assist Project Website
-baseurl: "/CSE435-Group-Website"
-url: "https://fiorittoev.github.io"
+url: "https://www.egr.msu.edu"
+baseurl: "/cse435/tja2"
+permalink: /:path/
+
 
 # Build settings
 markdown: kramdown
