@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype - Team TJA2</title>
+  <link rel="stylesheet" href="/cse435/tja2/assets/css/styles.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Prototype | Team TJA2</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Prototype" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Traffic Jam Assist Project Website" />
+<meta property="og:description" content="Traffic Jam Assist Project Website" />
+<link rel="canonical" href="http://localhost:4000/cse435/tja2/prototype/" />
+<meta property="og:url" content="http://localhost:4000/cse435/tja2/prototype/" />
+<meta property="og:site_name" content="Team TJA2" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Prototype" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Traffic Jam Assist Project Website","headline":"Prototype","url":"http://localhost:4000/cse435/tja2/prototype/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/cse435/tja2/">Home</a></li>
+            <li><a href="/cse435/tja2/project">Project</a></li>
+            <li><a href="/cse435/tja2/prototype">Prototype</a></li>
+            <li><a href="/cse435/tja2/team">Team</a></li>
+            <li><a href="/cse435/tja2/course">Course</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="unity-container">
+    <canvas id="unity-canvas" width="960px" height="600px"></canvas>
+</div>
+
+<script src="/cse435/tja2/Unity/Build/Unity.loader.js"></script>
+<script>
+  createUnityInstance(document.querySelector("#unity-canvas"), {
+    dataUrl: "/cse435/tja2/Unity/Build/Unity.data",
+    frameworkUrl: "/cse435/tja2/Unity/Build/Unity.framework.js",
+    codeUrl: "/cse435/tja2/Unity/Build/Unity.wasm",
+  }).then((unityInstance) => {
+    console.log("Unity loaded!");
+  }).catch((message) => {
+    console.error(message);
+  });
+</script>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Team TJA2. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -30,3 +30,6 @@ exclude:
   - docker-compose.yml
   - requirements.txt
   - __pycache__
+
+include:
+  - Unity
