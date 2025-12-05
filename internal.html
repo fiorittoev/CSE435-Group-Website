@@ -1,0 +1,31 @@
+---
+layout: default
+title: Internal
+---
+<h1>Internal Files</h1>
+
+<div class="project-card">
+  <h2>Group Homework Archive</h2>
+  <p>Below is the archive of all intermediate assignments.</p>
+  {% for hw in site.group_homework %}
+    <div class="agenda-item">
+      <p>{{ hw.name }}</p>
+      <a href="{{ hw.file-path | relative_url }}" class="download-link">Download</a>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="project-card">
+  <h2>Model Artifacts</h2>
+  <p>Below is the archive of all intermediate model artifacts.</p>
+  {% for model in site.models %}
+    <img src="{{ model.file-path | relative_url }}" alt="{{ model.name }}" class="model-artifact"/>
+  {% endfor %}
+</div>
+
+<div class="project-card">
+  <h2>Group Discussion</h2>
+    <div class="agenda-item">
+      <a href="/assets/transcript.txt" class="download-link">Download</a>
+    </div>
+</div>

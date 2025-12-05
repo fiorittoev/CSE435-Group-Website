@@ -3,6 +3,7 @@ layout: default
 title: Project
 ---
 <h1>Project Information</h1>
+
 <div class="project-card">
   <h2>Meeting Agenda Archive</h2>
   <p>Below is the archive of meeting agendas.</p>
@@ -10,6 +11,38 @@ title: Project
     <div class="agenda-item">
       <p>Meeting Date: {{ agenda.date }}</p>
       <a href="{{ agenda.file-path | relative_url }}" class="download-link">Download</a>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="project-card">
+  <h2>Domain Research</h2>
+    <div class="agenda-item">
+      <a href="/assets/pdf/domain.pdf" class="download-link">Download</a>
+    </div>
+</div>
+
+<div class="project-card">
+  <h2>Customer Dialog</h2>
+    <div class="agenda-item">
+      <a href="/assets/pdf/Presentation.pdf" class="download-link">Download</a>
+    </div>
+</div>
+
+<div class="project-card">
+  <h2>Project Presentation Slideshow</h2>
+    <div class="agenda-item">
+      <a href="/assets/pdf/Presentation.pdf" class="download-link">Download</a>
+    </div>
+</div>
+
+<div class="project-card">
+  <h2>SRS</h2>
+  <p>Below is the archive of all SRS versions.</p>
+  {% for srs in site.srs %}
+    <div class="agenda-item">
+      <p>{{ srs.name }}</p>
+      <a href="{{ hw.file-path | relative_url }}" class="download-link">Download</a>
     </div>
   {% endfor %}
 </div>

@@ -22,6 +22,12 @@ collections:
     output: true
   meeting_agendas:
     output: true
+  group_homework:
+    output: true
+  srs:
+    output: true
+  models:
+    output: true
 
 # Exclude from processing
 exclude:

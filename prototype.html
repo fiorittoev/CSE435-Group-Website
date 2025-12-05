@@ -2,9 +2,12 @@
 layout: default
 title: Prototype
 ---
+<h1>Prototype</h1>
+
 <div id="unity-container">
     <canvas id="unity-canvas" width="960px" height="600px"></canvas>
 </div>
+
 
 <script src="{{ '/Unity/Build/Unity.loader.js' | relative_url }}"></script>
 <script>
@@ -18,3 +21,10 @@ title: Prototype
     console.error(message);
   });
 </script>
+
+<h2>Controls</h2>
+<p>
+  Click to interact with dashboard UI
+  "WASD" to move
+  "Q/E" to turn on turn signals
+</p>

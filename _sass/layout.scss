@@ -27,8 +27,8 @@ body {
 header {
     height:auto;
     width:100%;
-    background-color: var(--white);
-    color: var(--dark-purple);
+    background-color: var(--dark-purple);
+    color: var(--white);
     border-bottom: var(--dark-purple);
     border-bottom-style: solid;
     border-bottom-width: 3px;
@@ -38,11 +38,20 @@ header {
 }
 nav {
     width: 100%;
-    background-color: var(--grey);
-    color: var(--dark-purple);
+    background-color: var(--dark-purple);
+    color: var(--white);
     padding: 0.5rem 0;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    opacity: 0.95;
+    backdrop-filter: blur(10px); /* Adjust blur strength as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari browser support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle light border */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Smooth, rounded corners */
+    position:sticky;
+    top:0;
+    z-index: 100;
 }
 nav ul {
     display: flex;
@@ -60,23 +69,17 @@ nav ul li {
 nav a {
     display: block;
     text-decoration: none;
+    color:var(--white);
     border-radius: 1rem;
     padding: 0.5rem 1.2rem;
-    color: var(--dark-purple);
     font-weight: 500;
     font-size: 1rem;
-    transition: background 0.2s, color 0.2s;
+    transition: color 0.2s;
 }
 nav a:hover
 {
-    color: var(--white);
-    background-color: var(--dark-purple);
+    color: var(--grey);
     transition: 0.2s ease-in-out;
-}
-nav a:hover {
-    color: var(--white);
-    background-color: var(--dark-purple);
-    box-shadow: 0 2px 8px rgba(32, 21, 78, 0.08);
 }
 main 
 { 
