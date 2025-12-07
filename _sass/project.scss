@@ -1,37 +1,163 @@
 h1
 {
     color:var(--dark-purple);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
 }
+
 .project-card
 {
     background-color: var(--grey);
     height: auto;
     text-align: left;
     border-radius: 1rem;
-    margin-bottom: 5rem;
-    padding:2rem;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    margin-bottom: 3rem;
+    padding: 2.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover
+{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(31, 3, 34, 0.2);
+}
+
+.project-card h2
+{
+    color: var(--dark-purple);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 0.5rem;
+}
+
+.project-card > p
+{
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.05rem;
 }
 
 .agenda-item {
     background-color: var(--white);
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    border: 1px solid var(--blue);
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+    border-radius: 0.75rem;
+    border: 2px solid var(--blue);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.agenda-item:hover {
+    border-color: var(--purple);
+    box-shadow: 0 4px 12px rgba(82, 21, 78, 0.15);
+    transform: translateX(4px);
+}
+
+.agenda-item p {
+    margin: 0;
+    color: var(--black);
+    font-size: 1rem;
+    flex: 1;
+    min-width: 200px;
+}
+
+.agenda-item:first-child {
+    margin-top: 0;
+}
+
+.agenda-item:last-child {
+    margin-bottom: 0;
 }
 
 .download-link {
     display: inline-block;
     background-color: var(--purple);
     color: var(--white);
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     text-decoration: none;
-    margin-top: 0.5rem;
-    transition: background-color 0.2s;
+    margin-top: 0;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(82, 21, 78, 0.3);
 }
 
 .download-link:hover {
     background-color: var(--dark-purple);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(31, 3, 34, 0.4);
+}
+
+.download-link:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(82, 21, 78, 0.3);
+}
+
+.model-artifact {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid var(--blue);
+    background-color: var(--white);
+    padding: 0.5rem;
+}
+
+.model-artifact:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(82, 21, 78, 0.25);
+    border-color: var(--purple);
+}
+
+.model-artifact:first-child {
+    margin-top: 0;
+}
+
+.model-artifact:last-child {
+    margin-bottom: 0;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .project-card {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .project-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .agenda-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .agenda-item p {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+
+    .download-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .model-artifact {
+        margin: 1rem 0;
+    }
 }

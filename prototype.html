@@ -9,12 +9,12 @@ title: Prototype
 </div>
 
 
-<script src="{{ '/Unity/Build/Unity.loader.js' | relative_url }}"></script>
+<script src="{{ '/Unity/Build/build.loader.js' | relative_url }}"></script>
 <script>
   createUnityInstance(document.querySelector("#unity-canvas"), {
-    dataUrl: "{{ '/Unity/Build/Unity.data' | relative_url }}",
-    frameworkUrl: "{{ '/Unity/Build/Unity.framework.js' | relative_url }}",
-    codeUrl: "{{ '/Unity/Build/Unity.wasm' | relative_url }}",
+    dataUrl: "{{ '/Unity/Build/build.data' | relative_url }}",
+    frameworkUrl: "{{ '/Unity/Build/build.framework.js' | relative_url }}",
+    codeUrl: "{{ '/Unity/Build/build.wasm' | relative_url }}",
   }).then((unityInstance) => {
     console.log("Unity loaded!");
   }).catch((message) => {

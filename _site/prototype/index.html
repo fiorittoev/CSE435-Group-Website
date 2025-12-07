@@ -43,12 +43,12 @@
 </div>
 
 
-<script src="/cse435/tja2/Unity/Build/Unity.loader.js"></script>
+<script src="/cse435/tja2/Unity/Build/build.loader.js"></script>
 <script>
   createUnityInstance(document.querySelector("#unity-canvas"), {
-    dataUrl: "/cse435/tja2/Unity/Build/Unity.data",
-    frameworkUrl: "/cse435/tja2/Unity/Build/Unity.framework.js",
-    codeUrl: "/cse435/tja2/Unity/Build/Unity.wasm",
+    dataUrl: "/cse435/tja2/Unity/Build/build.data",
+    frameworkUrl: "/cse435/tja2/Unity/Build/build.framework.js",
+    codeUrl: "/cse435/tja2/Unity/Build/build.wasm",
   }).then((unityInstance) => {
     console.log("Unity loaded!");
   }).catch((message) => {
